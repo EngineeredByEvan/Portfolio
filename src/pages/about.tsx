@@ -19,7 +19,7 @@ const sections = [
   },
   {
     type: 'video',
-    src: '/about-section-assets/electrician-work.mp4',
+    src: '/about-section-assets/electrician-work.MP4',
     alt: 'Electrical Work Video',
     content: `Later, transitioning to management, I spent several years as a Shift Manager at Domino’s Pizza, refining my leadership, team coordination, conflict resolution, and operational optimization skills. Concurrently, my curiosity led me to diverse roles, from Tow Truck Driver to Service Advisor at Gurr Auto, and even as an Apprentice Electrician in Vancouver—working on projects ranging from premium retail spaces downtown, to luxury homes.`,
   },
@@ -77,12 +77,13 @@ export default function About() {
               {section.type === 'video' && (
                 <video
                   className="rounded-lg shadow-lg w-full md:w-1/2 max-h-[400px]"
+                  autoPlay
                   controls
                   muted
                   loop
                   playsInline
                 >
-                  <source src={section.src} type="video/mp4" />
+                  <source src={section.src} type="video/MP4" />
                   Your browser does not support the video tag.
                 </video>
               )}
