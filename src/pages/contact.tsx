@@ -29,7 +29,7 @@ export default function Contact() {
           Whether youre interested in working together, discussing tech, or just connecting, feel free to reach out!
         </motion.p>
         <motion.a
-          href="mailto:your.email@example.com"
+          href="mailto:evanwhite.dev@gmail.com"
           className="bg-red-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-600 transition"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
