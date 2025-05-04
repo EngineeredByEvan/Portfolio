@@ -71,27 +71,41 @@ export default function About() {
               viewport={{ once: true }}
             >
               {section.type === 'image' && (
-                <Image
-                  src={section.src ?? ''}
-                  alt={section.alt || 'Image'}
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg object-cover w-full md:w-1/2"
-                />
+                <div className="flex flex-col items-center md:w-1/2">
+                  <Image
+                    src={section.src ?? ''}
+                    alt={section.alt || 'Image'}
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg object-cover w-full"
+                  />
+                  {section.caption && (
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 italic text-center">
+                      {section.caption}
+                    </p>
+                  )}
+                </div>
               )}
-              {section.type === 'video' && (
-                <video
-                  className="rounded-lg shadow-lg w-full md:w-1/2 max-h-[400px]"
-                  autoPlay
-                  controls
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src={section.src} type="video/MP4" />
-                  Your browser does not support the video tag.
-                </video>
-              )}
+                {section.type === 'video' && (
+                  <div className="flex flex-col items-center md:w-1/2">
+                    <video
+                      className="rounded-lg shadow-lg w-full max-h-[400px]"
+                      autoPlay
+                      controls
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={section.src} type="video/MP4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    {section.caption && (
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 italic text-center">
+                        {section.caption}
+                      </p>
+                    )}
+                  </div>
+                )}
               <p className="text-lg md:w-1/2 leading-relaxed whitespace-pre-line">{section.content}</p>
             </motion.div>
           ))}
