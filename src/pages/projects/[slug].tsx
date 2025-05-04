@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import FloatingShapes from '@/components/FloatingShapes';
 import { projects } from '@/data/projects';
@@ -57,13 +58,15 @@ export default function ProjectDetail() {
         {/* Floating bg shapes for case-study pages */}
         <FloatingShapes />
 
-        <div className="px-6 py-12 flex flex-col items-center">
-          <motion.h1
-            className="text-5xl md:text-6xl font-bold mb-6 text-center"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+        <div className="flex flex-col items-center mb-6">
+          <Image
+            src={`/${project.slug === 'vineguard' ? 'VineGuardLogo.png' : project.slug === 'smartbasket' ? 'SmartBasketLogo.png' : project.slug === 'hopper' ? 'HoppeRLogo.png' : ''}`}
+            alt={`${project.title} Logo`}
+            width={100}
+            height={100}
+            className="mb-4"
+          />
+          <motion.h1 className="text-5xl md:text-6xl font-bold text-center">
             {project.title}
           </motion.h1>
 
@@ -132,6 +135,21 @@ export default function ProjectDetail() {
                   {project.caseStudy.results}
                 </p>
               </motion.div>
+              {project.slug === 'ml-stock-predictor' && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="mt-12"
+              >
+                <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
+                <iframe
+                  src="/EvanWhite_COMP377Lab5_Ex1.pdf"
+                  className="w-full h-[600px] border rounded-lg"
+                ></iframe>
+              </motion.div>
+            )}
             </section>
           )}
 
