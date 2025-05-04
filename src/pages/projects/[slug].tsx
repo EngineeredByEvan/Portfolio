@@ -54,10 +54,10 @@ export default function ProjectDetail() {
         <title>{project.title} | Evan White</title>
       </Head>
       <Header />
-      <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+      <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 px-4 md:px-6">
         <FloatingShapes />
 
-        <div className="flex flex-col items-center mb-6">
+        <div className="flex flex-col items-center mb-6 w-full px-4">
           {project.logo && (
             <Image
               src={`/${project.logo}`}
@@ -144,10 +144,13 @@ export default function ProjectDetail() {
                   className="mt-12"
                 >
                   <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
+                  <div className="w-full flex justify-center overflow-x-auto">
                   <iframe
                     src="/MachineLearningStockPredictor.pdf"
-                    className="w-full h-[600px] border rounded-lg"
+                    className="w-full md:w-[1000px] h-[600px] md:h-[1000px] border rounded-lg"
+                    title="Stock Predictor Notebook"
                   ></iframe>
+                  </div>
                 </motion.div>
               )}
             </section>
@@ -161,10 +164,11 @@ export default function ProjectDetail() {
               className="mt-12"
             >
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
-              <div className="flex justify-center">
+              <div className="w-full flex justify-center overflow-x-auto">
               <iframe
                 src="/SmartBasketSlideshow.pdf"
-                className="w-full md:w-[1000px] h-[1000px] border rounded-lg"
+                className="w-full md:w-[1000px] h-[600px] md:h-[1000px] border rounded-lg"
+                title="SmartBasket Presentation"
               ></iframe>
               </div>
             </motion.div>

@@ -12,7 +12,7 @@ export default function Projects() {
         <title>Projects | Evan White</title>
       </Head>
       <Header />
-      <main className="min-h-screen bg-blue-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-12 transition-colors duration-300">
+      <main className="min-h-screen bg-blue-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-4 md:px-6 py-12 transition-colors duration-300">
         <motion.h1
           className="text-5xl md:text-6xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -22,7 +22,7 @@ export default function Projects() {
           Projects
         </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {projects.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
               <motion.div
