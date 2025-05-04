@@ -21,8 +21,10 @@ export default function Home() {
         <title>Evan White | Portfolio</title>
       </Head>
       <Header />
-      <main ref={ref} className="relative bg-gradient-to-b from-orange-400 via-red-500 to-pink-500 dark:from-gray-900 dark:via-gray-800 dark:to-black min-h-screen flex flex-col items-center justify-center text-white px-6 transition-colors duration-300">
-        
+      <main
+        ref={ref}
+        className="relative bg-gradient-to-b from-orange-400 via-red-500 to-pink-500 dark:from-gray-900 dark:via-gray-800 dark:to-black min-h-screen flex flex-col items-center justify-center text-white px-6 transition-colors duration-300 overflow-x-hidden">
+
         <FloatingShapes />
 
         <motion.h1

@@ -147,8 +147,13 @@ export default function ProjectDetail() {
                   <div className="w-full flex justify-center overflow-x-auto">
                   <iframe
                     src="/MachineLearningStockPredictor.pdf"
-                    className="w-full md:w-[1000px] h-[600px] md:h-[1000px] border rounded-lg"
+                    className="w-full md:w-[90%] h-[75vh] border rounded-lg"
                     title="Stock Predictor Notebook"
+                    style={{
+                      overflow: 'auto',
+                      WebkitOverflowScrolling: 'touch',
+                    }}
+                    sandbox=""
                   ></iframe>
                   </div>
                 </motion.div>
@@ -167,8 +172,13 @@ export default function ProjectDetail() {
               <div className="w-full flex justify-center overflow-x-auto">
               <iframe
                 src="/SmartBasketSlideshow.pdf"
-                className="w-full md:w-[1000px] h-[600px] md:h-[1000px] border rounded-lg"
+                className="w-full md:w-[90%] h-[75vh] border rounded-lg"
                 title="SmartBasket Presentation"
+                style={{
+                  overflow: 'auto',
+                  WebkitOverflowScrolling: 'touch',
+                }}
+                sandbox=""
               ></iframe>
               </div>
             </motion.div>
