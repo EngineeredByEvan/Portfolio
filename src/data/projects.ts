@@ -41,6 +41,7 @@ export const projects: Project[] = [
     title: 'Machine Learning Stock Predictor',
     description: 'An LSTM model for stock price forecasting.',
     techs: ['Python','TensorFlow','LSTM','Pandas', 'NumPy', 'MatplotLib'],
+    logo: 'StockPrediction.png',
     caseStudy: {
       challenge: 'LSTM models are hard to tune for noisy time-series data like stock prices.',
       solution: 'Used TensorFlow to build LSTM models for both stock prediction',
