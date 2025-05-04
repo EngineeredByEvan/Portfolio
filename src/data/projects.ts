@@ -16,7 +16,7 @@ export const projects: Project[] = [
     slug: 'vineguard',
     title: 'VineGuard Precision Systems',
     description: 'An IoT-powered vineyard monitoring system with AI-driven insights for optimizing irrigation, canopy management, and disease prevention.',
-    techs: ['ESP32', 'LoRa', 'AWS', 'React', 'TypeScript'],
+    techs: ['C++', 'Python', 'ESP32', 'LoRa', 'AWS', 'React', 'TypeScript'],
     logo: 'VineGuardLogo.png',
     caseStudy: {
       challenge: 'Vineyards struggle with unpredictable weather, fungal disease pressure, and inefficient irrigation — all impacting grape quality and yield. Many growers lack real-time, zone-specific data to make informed decisions.',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     slug: 'smartbasket',
     title: 'SmartBasket',
     description: 'An AI-driven shopping assistant that predicts your next purchase based on past behavior, built as a full-stack application with integrated ML.',
-    techs: ['React', 'FastAPI', 'PostgreSQL', 'TensorFlow', 'Scikit-learn', 'Redis'],
+    techs: ['TypeScript', 'React', 'FastAPI', 'PostgreSQL', 'TensorFlow', 'Scikit-learn', 'Redis'],
     logo: 'SmartBasketLogo.png',
     caseStudy: {
       challenge: 'Customers often experience friction during checkout and miss common items during shopping. Prediction-based personalization was lacking in traditional retail environments.',
