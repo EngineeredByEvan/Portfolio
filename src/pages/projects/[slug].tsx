@@ -162,7 +162,7 @@ export default function ProjectDetail() {
             >
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
               <iframe
-                src="/SmartBasket_Presentation.pdf"
+                src="/SmartBasketSlideshow.pdf"
                 className="w-full h-[600px] border rounded-lg"
               ></iframe>
             </motion.div>
