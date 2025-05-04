@@ -189,7 +189,7 @@ export default function ProjectDetail() {
               <div className="hidden md:block">
                 <iframe
                   src="/SmartBasketSlideshow.pdf"
-                  className="w-full max-w-4xl h-[800px] border rounded-lg mx-auto"
+                  className="w-full max-w-[1100px] h-[800px] border rounded-lg mx-auto"
                   title="SmartBasket PDF"
                 ></iframe>
               </div>
