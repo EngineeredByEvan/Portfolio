@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import FloatingShapes from '@/components/FloatingShapes';
 import { projects } from '@/data/projects';
 import { motion } from 'framer-motion';
+import PdfViewer from '@/components/PdfViewer';
+
 
 const techColors: { [key: string]: string } = {
   'Scikit-learn': '#F7931E',
@@ -144,18 +146,7 @@ export default function ProjectDetail() {
                   className="mt-12"
                 >
                   <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
-                  <div className="w-full flex justify-center overflow-x-auto">
-                  <iframe
-                    src="/MachineLearningStockPredictor.pdf"
-                    className="w-full md:w-[90%] h-[75vh] border rounded-lg"
-                    title="Stock Predictor Notebook"
-                    style={{
-                      overflow: 'auto',
-                      WebkitOverflowScrolling: 'touch',
-                    }}
-                    sandbox=""
-                  ></iframe>
-                  </div>
+                  <PdfViewer file="/MachineLearningStockPredictor.pdf" />
                 </motion.div>
               )}
             </section>
@@ -169,18 +160,7 @@ export default function ProjectDetail() {
               className="mt-12"
             >
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
-              <div className="w-full flex justify-center overflow-x-auto">
-              <iframe
-                src="/SmartBasketSlideshow.pdf"
-                className="w-full md:w-[90%] h-[75vh] border rounded-lg"
-                title="SmartBasket Presentation"
-                style={{
-                  overflow: 'auto',
-                  WebkitOverflowScrolling: 'touch',
-                }}
-                sandbox=""
-              ></iframe>
-              </div>
+              <PdfViewer file="/SmartBasketSlideshow.pdf" />
             </motion.div>
           )}
           <motion.div
