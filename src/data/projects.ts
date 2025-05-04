@@ -44,7 +44,7 @@ export const projects: Project[] = [
     logo: 'StockPrediction.png',
     caseStudy: {
       challenge: 'LSTM models are hard to tune for noisy time-series data like stock prices.',
-      solution: 'Used TensorFlow to build LSTM models for both stock prediction',
+      solution: 'Used TensorFlow to build LSTM models for stock prediction',
       results: 'Stock predictor reached moderate accuracy and successfully captured general trends.',
     }
   },
