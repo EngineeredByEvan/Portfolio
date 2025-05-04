@@ -35,8 +35,8 @@ export default function Projects() {
                   <Image
                     src={`/${project.logo}`}
                     alt={`${project.title} Logo`}
-                    width={80}
-                    height={80}
+                    width={110}
+                    height={110}
                     className="mb-4 group-hover:scale-110 transition-transform"
                   />
                 )}
