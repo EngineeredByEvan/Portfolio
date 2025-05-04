@@ -186,10 +186,10 @@ export default function ProjectDetail() {
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
 
               {/* Show iframe on large screens */}
-              <div className="w-full flex justify-center px-4 overflow-x-auto">
+              <div className="w-screen px-0 md:px-8 overflow-x-auto flex justify-center">
                 <iframe
                   src="/SmartBasketSlideshow.pdf"
-                  className="w-full max-w-[95%] md:max-w-[1200px] h-[800px] border rounded-lg shadow-lg"
+                  className="w-[95vw] md:w-[90vw] lg:w-[80vw] h-[800px] border rounded-lg shadow-lg"
                   title="SmartBasket Presentation"
                 ></iframe>
               </div>
