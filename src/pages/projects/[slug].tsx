@@ -152,7 +152,21 @@ export default function ProjectDetail() {
               )}
             </section>
           )}
-
+          {project.slug === 'smartbasket' && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-12"
+            >
+              <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
+              <iframe
+                src="/SmartBasket_Presentation.pdf"
+                className="w-full h-[600px] border rounded-lg"
+              ></iframe>
+            </motion.div>
+          )}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
