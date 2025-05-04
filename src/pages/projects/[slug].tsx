@@ -6,7 +6,6 @@ import Header from '@/components/Header';
 import FloatingShapes from '@/components/FloatingShapes';
 import { projects } from '@/data/projects';
 import { motion } from 'framer-motion';
-import PdfViewer from '@/components/PdfViewer';
 
 
 const techColors: { [key: string]: string } = {
@@ -143,26 +142,75 @@ export default function ProjectDetail() {
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.6, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="mt-12"
+                  className="mt-12 text-center"
                 >
-                  <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
-                  <PdfViewer file="/MachineLearningStockPredictor.pdf" />
+                  <h2 className="text-3xl font-bold mb-4">Project Notebook</h2>
+
+                  {/* Show iframe on large screens */}
+                  <div className="hidden md:block">
+                    <iframe
+                      src="/MachineLearningStockPredictor.pdf"
+                      className="w-full max-w-4xl h-[800px] border rounded-lg mx-auto"
+                      title="Stock Predictor Model PDF"
+                    ></iframe>
+                  </div>
+
+                  {/* Show link on mobile */}
+                  <div className="md:hidden">
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      Viewing on mobile? Click below to open the PDF:
+                    </p>
+                    <a
+                      href="/MachineLearningStockPredictor.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition"
+                    >
+                      Open PDF
+                    </a>
+                  </div>
                 </motion.div>
               )}
             </section>
           )}
+
+
           {project.slug === 'smartbasket' && (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
               viewport={{ once: true }}
-              className="mt-12"
+              className="mt-12 text-center"
             >
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
-              <PdfViewer file="/SmartBasketSlideshow.pdf" />
+
+              {/* Show iframe on large screens */}
+              <div className="hidden md:block">
+                <iframe
+                  src="/SmartBasketSlideshow.pdf"
+                  className="w-full max-w-4xl h-[800px] border rounded-lg mx-auto"
+                  title="SmartBasket PDF"
+                ></iframe>
+              </div>
+
+              {/* Show link on mobile */}
+              <div className="md:hidden">
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Viewing on mobile? Click below to open the PDF:
+                </p>
+                <a
+                  href="/SmartBasketSlideshow.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition"
+                >
+                  Open Slideshow PDF
+                </a>
+              </div>
             </motion.div>
           )}
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
