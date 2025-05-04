@@ -161,10 +161,12 @@ export default function ProjectDetail() {
               className="mt-12"
             >
               <h2 className="text-3xl font-bold mb-4">Project Walkthrough</h2>
+              <div className="flex justify-center">
               <iframe
                 src="/SmartBasketSlideshow.pdf"
-                className="w-full h-[600px] border rounded-lg"
+                className="w-full md:w-[1000px] h-[1000px] border rounded-lg"
               ></iframe>
+              </div>
             </motion.div>
           )}
           <motion.div
