@@ -62,8 +62,8 @@ export default function ProjectDetail() {
             <Image
               src={`/${project.logo}`}
               alt={`${project.title} Logo`}
-              width={100}
-              height={100}
+              width={400}
+              height={400}
               className="mb-4"
             />
           )}
