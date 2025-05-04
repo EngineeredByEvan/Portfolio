@@ -31,13 +31,15 @@ export default function Projects() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                <Image
-                  src={`/${project.slug === 'vineguard' ? 'VineGuardLogo.png' : project.slug === 'smartbasket' ? 'SmartBasketLogo.png' : project.slug === 'hopper' ? 'HoppeRLogo.png' : ''}`}
-                  alt={`${project.title} Logo`}
-                  width={80}
-                  height={80}
-                  className="mb-4 group-hover:scale-110 transition-transform"
-                />
+                {project.logo && (
+                  <Image
+                    src={`/${project.logo}`}
+                    alt={`${project.title} Logo`}
+                    width={80}
+                    height={80}
+                    className="mb-4 group-hover:scale-110 transition-transform"
+                  />
+                )}
                 <h2 className="text-xl font-bold mb-2">{project.title}</h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">{project.description}</p>
               </motion.div>

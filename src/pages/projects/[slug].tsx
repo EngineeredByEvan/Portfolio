@@ -55,17 +55,18 @@ export default function ProjectDetail() {
       </Head>
       <Header />
       <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-        {/* Floating bg shapes for case-study pages */}
         <FloatingShapes />
 
         <div className="flex flex-col items-center mb-6">
-          <Image
-            src={`/${project.slug === 'vineguard' ? 'VineGuardLogo.png' : project.slug === 'smartbasket' ? 'SmartBasketLogo.png' : project.slug === 'hopper' ? 'HoppeRLogo.png' : ''}`}
-            alt={`${project.title} Logo`}
-            width={100}
-            height={100}
-            className="mb-4"
-          />
+          {project.logo && (
+            <Image
+              src={`/${project.logo}`}
+              alt={`${project.title} Logo`}
+              width={100}
+              height={100}
+              className="mb-4"
+            />
+          )}
           <motion.h1 className="text-5xl md:text-6xl font-bold text-center">
             {project.title}
           </motion.h1>
@@ -79,7 +80,6 @@ export default function ProjectDetail() {
             {project.description}
           </motion.p>
 
-          {/* Tech stack badges */}
           <motion.div
             className="flex flex-wrap justify-center gap-4 mb-12"
             initial={{ opacity: 0 }}
@@ -97,7 +97,6 @@ export default function ProjectDetail() {
             ))}
           </motion.div>
 
-          {/* Case Study Sections */}
           {project.caseStudy && (
             <section className="max-w-3xl w-full space-y-12 mb-12">
               <motion.div
@@ -135,25 +134,25 @@ export default function ProjectDetail() {
                   {project.caseStudy.results}
                 </p>
               </motion.div>
+
               {project.slug === 'ml-stock-predictor' && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-                viewport={{ once: true }}
-                className="mt-12"
-              >
-                <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
-                <iframe
-                  src="/EvanWhite_COMP377Lab5_Ex1.pdf"
-                  className="w-full h-[600px] border rounded-lg"
-                ></iframe>
-              </motion.div>
-            )}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mt-12"
+                >
+                  <h2 className="text-3xl font-bold mb-4">Notebook Demo</h2>
+                  <iframe
+                    src="/MachineLearningStockPredictor.pdf"
+                    className="w-full h-[600px] border rounded-lg"
+                  ></iframe>
+                </motion.div>
+              )}
             </section>
           )}
 
-          {/* Back to Projects */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
