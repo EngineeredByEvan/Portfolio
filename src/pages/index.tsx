@@ -42,7 +42,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          Im Evan White — a Backend, Cloud, and Data Engineer who loves crafting clean, efficient, and scalable systems.
+          I&#39;m Evan White — a Software Engineer who loves crafting clean, efficient, and scalable systems with a focus on Backend, Cloud, Data, and AI Integration.
         </motion.p>
 
         <motion.div
