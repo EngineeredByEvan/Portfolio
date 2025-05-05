@@ -17,7 +17,7 @@ const sections = [
     src: '/about-section-assets/langdon food.jpg',
     alt: 'Langdon Hall Plated Desserts',
     caption: 'Langdon Hall Dessert Menu when I joined the team in 2014',
-    content: `My professional journey began as a Pastry Cook at Langdon Hall Country House Hotel & Spa. During high school, my passion for pastry arts quickly turned from interest to expertise, winning 1st place in a regional competition and representing the Thames Valley District School Board at the provincial level. I even helped teach aspiring pastry chefs, fostering my early love for mentorship and collaboration.`,
+    content: `My professional journey began as a Pastry Cook at Langdon Hall Country House Hotel & Spa. During high school, my passion for pastry arts quickly turned from interest to expertise within months, winning 1st place in a regional competition and representing the Thames Valley District School Board at the provincial level. Simultaneously, I helped teach aspiring pastry chefs, prospective students during a summer camp, and even assisted teaching my fellow classmates during senior year. This fostered my early love for mentorship and collaboration.`,
   },
   {
     type: 'video',
@@ -31,14 +31,14 @@ const sections = [
     src: '/about-section-assets/BakersTablePastryCo.JPG',
     alt: 'Baker’s Table & Pastry Co.',
     caption: 'Early days of Bakers Table & Pastry Co.',
-    content: `Driven by my entrepreneurial ambitions, I co-founded Baker's Table & Pastry Co., supplying premium baked goods to institutions like Western University, Elmhurst Inn, and Idlewyld Inn. My role went beyond pastry creation—I created our online ordering system, optimized business operations, and learned valuable lessons in entrepreneurship.`,
+    content: `Driven by my entrepreneurial ambitions, I co-founded Baker's Table & Pastry Co., supplying premium baked goods to institutions like Western University, Elmhurst Inn, and Idlewyld Inn. My role went beyond pastry creation—I created our online ordering system, optimized business operations, and learned valuable lessons in entrepreneurship. Bakers Table & Pastry Co. is still in operation today, and I am proud to have been a part of its early success.`,
   },
   {
     type: 'image',
     src: '/about-section-assets/VineGuard-Node.png',
     alt: 'VineGuard Prototype',
     caption: 'My VINEGUARD IoT Precision System Concept',
-    content: `In search of a new challenge and fueled by my passion for technology, I pivoted into tech, earning an Advanced Diploma in Software Engineering from Centennial College (2022–2025). Here, I've mastered software engineering principles, object-oriented programming, full-stack development, cloud computing, and explored emerging technologies like AI, ML, and IoT. Previously, I earned a Certificate in Electrical Techniques from Fanshawe College (2017–2018), grounding me in digital electronics and practical electrical skills, enhancing my understanding of hardware-software integration.`,
+    content: `In search of a new challenge and fueled by my passion for technology, I pivoted into tech, earning an Advanced Diploma in Software Engineering from Centennial College (2022–2025). Here, I've gained a strong foundation in software engineering principles, object-oriented programming, full-stack development, cloud computing, and explored emerging technologies like AI, ML, and IoT. Previously, I earned a Certificate in Electrical Techniques from Fanshawe College (2017–2018), grounding me in digital electronics and practical electrical skills, enhancing my understanding of hardware-software integration.`,
   },
   {
     type: 'text',
